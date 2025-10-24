@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="288" height="288">
+
+<defs>
+	<pattern id="checkerPattern" patternUnits="userSpaceOnUse" x="0" y="0" width="64" height="64" viewBox="0 0 32 32">
+		<rect x="0" y="0" width="16" height="16" fill="lightblue"/>
+		<rect x="16" y="16" width="16" height="16" fill="lightblue"/>
+	</pattern>
+
+	<radialGradient id="greenGrad" cx="48" cy="16" r="56" fx="24" fy="4" spreadMethod="pad" gradientUnits="userSpaceOnUse">
+		<stop offset="5%" stop-color="lightgreen"/>
+		<stop offset="95%" stop-color="#008000"/>
+	</radialGradient>
+	<radialGradient id="redGrad" cx="48" cy="16" r="56" fx="24" fy="4" spreadMethod="pad" gradientUnits="userSpaceOnUse">
+		<stop offset="5%" stop-color="red"/>
+		<stop offset="95%" stop-color="brown"/>
+	</radialGradient>
+	<mask id="keyMask">	<!-- 104x48 -->
+		<circle cx="24" cy="24" r="24" fill="white" stroke="white" stroke-width="2"/>
+		<circle cx="18" cy="24" r="8" fill="black" stroke="white" stroke-width="3"/>
+		<path d="M46 16 l50 0 l8 8 l-8 8    l-2 0 l-4 -4 l-2 2 l-2 -2 l-4 4 l-6 -6 l-2 2 l-2 -2 l-4 4 l-2 -2 l-2 2 l-4 -4 l-4 4 l-2 -2 l-4 4    l-4 0" fill="white" stroke="white" stroke-width="2"/>
+	</mask>
+	<g id="key" mask="url(#keyMask)">	<!-- 104x48 -->
+		<circle cx="24" cy="24" r="24" stroke-width="2"/>
+		<circle cx="18" cy="24" r="8" fill="white" stroke-width="2"/>
+		<path d="M46 16 l50 0 l8 8 l-8 8    l-2 0 l-4 -4 l-2 2 l-2 -2 l-4 4 l-6 -6 l-2 2 l-2 -2 l-4 4 l-2 -2 l-2 2 l-4 -4 l-4 4 l-2 -2 l-4 4    l-4 0" stroke-width="2"/>
+	</g>
+	<g id="redKey" fill="url(#redGrad)" stroke="brown">
+		<use xlink:href="#key"/>
+	</g>
+	<g id="greenKey" fill="url(#greenGrad)" stroke="#008000">
+		<use xlink:href="#key"/>
+	</g>
+	<g id="alicePrivate">
+		<use xlink:href="#redKey"/>
+		<switch><text x="28" y="32" font-size="20" font-weight="bold" font-family="DejaVu Sans" fill="white" stroke="brown" id="trsvg15"><tspan id="trsvg1">A</tspan></text></switch>
+		<switch><text x="48" y="26" font-size="12" font-weight="bold" font-family="DejaVu Sans" fill="white" id="trsvg16-pt-br" systemLanguage="pt-br"><tspan id="trsvg2-pt-br">Privada</tspan></text><text x="48" y="26" font-size="12" font-weight="bold" font-family="DejaVu Sans" fill="white" id="trsvg16"><tspan id="trsvg2">Private</tspan></text></switch>
+	</g>
+	<g id="alicePublic">
+		<use xlink:href="#greenKey"/>
+		<switch><text x="28" y="32" font-size="20" font-weight="bold" font-family="DejaVu Sans" fill="white" stroke="green" id="trsvg17"><tspan id="trsvg3">A</tspan></text></switch>
+		<switch><text x="48" y="26" font-size="12" font-weight="bold" font-family="DejaVu Sans" fill="white" id="trsvg18-pt-br" systemLanguage="pt-br"><tspan id="trsvg4-pt-br">Pública</tspan></text><text x="48" y="26" font-size="12" font-weight="bold" font-family="DejaVu Sans" fill="white" id="trsvg18"><tspan id="trsvg4">Public</tspan></text></switch>
+	</g>
+	<g id="randomNumberBox">
+		<rect width="100" height="48" fill="blue" fill-opacity="0.3" stroke="blue" stroke-width="2"/>
+		<switch><text x="0" y="14" font-size="16" font-family="DejaVu Sans Mono" fill="blue" fill-opacity="0.3" id="trsvg19"><tspan id="trsvg5">0110101010</tspan></text></switch>
+		<switch><text x="0" y="30" font-size="16" font-family="DejaVu Sans Mono" fill="blue" fill-opacity="0.3" id="trsvg20"><tspan id="trsvg6">1101110100</tspan></text></switch>
+		<switch><text x="0" y="46" font-size="16" font-family="DejaVu Sans Mono" fill="blue" fill-opacity="0.3" id="trsvg21"><tspan id="trsvg7">0011011010</tspan></text></switch>
+		<switch><text x="25" y="13" font-size="16" font-weight="bold" font-family="DejaVu Sans" id="trsvg22-pt-br" systemLanguage="pt-br"><tspan id="trsvg8-pt-br">número</tspan></text><text x="25" y="13" font-size="16" font-weight="bold" font-family="DejaVu Sans" id="trsvg22"><tspan id="trsvg8">Large</tspan></text></switch>
+		<switch><text x="15" y="29" font-size="16" font-weight="bold" font-family="DejaVu Sans" id="trsvg23-pt-br" systemLanguage="pt-br"><tspan id="trsvg9-pt-br">aleatório</tspan></text><text x="15" y="29" font-size="16" font-weight="bold" font-family="DejaVu Sans" id="trsvg23"><tspan id="trsvg9">random</tspan></text></switch>
+		<switch><text x="15" y="45" font-size="16" font-weight="bold" font-family="DejaVu Sans" id="trsvg24-pt-br" systemLanguage="pt-br"><tspan id="trsvg10-pt-br">grande</tspan></text><text x="15" y="45" font-size="16" font-weight="bold" font-family="DejaVu Sans" id="trsvg24"><tspan id="trsvg10">number</tspan></text></switch>
+	</g>
+	<g id="keyGeneratorBox">
+		<rect width="100" height="48" fill="orange" fill-opacity="0.3" stroke="orange" stroke-width="2"/>
+		<switch><text x="33" y="13" font-size="16" font-weight="bold" font-family="DejaVu Sans" id="trsvg25-pt-br" systemLanguage="pt-br"><tspan id="trsvg11-pt-br">programa</tspan></text><text x="33" y="13" font-size="16" font-weight="bold" font-family="DejaVu Sans" id="trsvg25"><tspan id="trsvg11">Key</tspan></text></switch>
+		<switch><text x="1" y="29" font-size="16" font-weight="bold" font-family="DejaVu Sans" id="trsvg26-pt-br" systemLanguage="pt-br"><tspan id="trsvg12-pt-br">de geração</tspan></text><text x="1" y="29" font-size="16" font-weight="bold" font-family="DejaVu Sans" id="trsvg26"><tspan id="trsvg12">generation</tspan></text></switch>
+		<switch><text x="12" y="45" font-size="16" font-weight="bold" font-family="DejaVu Sans" id="trsvg27-pt-br" systemLanguage="pt-br"><tspan id="trsvg13-pt-br">de chaves</tspan></text><text x="12" y="45" font-size="16" font-weight="bold" font-family="DejaVu Sans" id="trsvg27"><tspan id="trsvg13">program</tspan></text></switch>
+	</g>
+	<marker id="triangle" markerUnits="userSpaceOnUse" viewBox="0 0 10 10" refX="10" refY="5" orient="auto" markerWidth="10" markerHeight="10">
+		<path d="M0 0 l10 5 l-10 5" fill="black"/>
+	</marker>
+</defs>
+
+<rect x="16" y="16" width="256" height="256" fill="pink" fill-opacity="0.2" stroke="pink"/>
+
+<switch><text x="96" y="52" font-size="36" font-weight="bold" font-family="DejaVu Sans" id="trsvg28"><tspan id="trsvg14">Alice</tspan></text></switch>
+<use xlink:href="#randomNumberBox" x="94" y="72"/>
+<path d="M144 120 l0 20" stroke="black" stroke-width="1" marker-end="url(#triangle)"/>
+<use xlink:href="#keyGeneratorBox" x="94" y="140"/>
+<path d="M128 188 l-48 48" stroke="black" stroke-width="1" marker-end="url(#triangle)"/>
+<path d="M160 188 l48 48" stroke="black" stroke-width="1" marker-end="url(#triangle)"/>
+<use xlink:href="#alicePublic" x="32" y="220"/>
+<use xlink:href="#alicePrivate" x="152" y="220"/>
+
+</svg>
