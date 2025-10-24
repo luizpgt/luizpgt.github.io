@@ -3,7 +3,7 @@
 | **PQC** | **QKD** | 
 | :-------: | :-------: | 
 | Post-Quantum Cryptography | Quantum Key Distribution | 
-| pt:Criptografia pós-quântica | pt:Distribuição Quântica de chaves | 
+| (Criptografia pós-quântica) | (Distribuição Quântica de chaves) | 
 | **↓** | **↓** |
 | Sistemas criptográficos que não seriam resolvidos pelo algoritmo de Shor | Comunicação de chaves físicamente impossível de interceptar. | 
 | **↓** | **↓** |

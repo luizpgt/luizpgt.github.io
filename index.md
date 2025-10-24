@@ -8,5 +8,6 @@ Este curso apresenta conteúdos sobre `Criptografia Pós Quântica` e `Distribui
 # Sumário de conteúdos
 
 Conteúdos:
-    - Base/ 
-        - [PQC & QKD](./conteudos/base/PQC-x-QKD.md): Post-Quantum Cryptography & Quantum Key Distribution
+
+- Base/ 
+    - [PQC & QKD](./conteudos/base/PQC-x-QKD.md): Post-Quantum Cryptography & Quantum Key Distribution
