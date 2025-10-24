@@ -1,4 +1,4 @@
-<pre>
+<pre style="text-align: center;">
 Post-Quantum Cryptography                 Quantum Key Distribution
 ───────────┬─────────────                 ────────────┬───────────
            ▼                                          ▼           
@@ -12,4 +12,4 @@ Sistemas criptográficos                   Comunicação de chaves
                                           Protocolos BB84 e       
 Problemas computacionais:                  derivados              
  Reticulados…                                                     
-<\pre>
+</pre>
