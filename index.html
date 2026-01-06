@@ -3,34 +3,33 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Tabacaria</title>
-    <style>
-        body {
-            margin: 0;
-            overflow: hidden;
-        }
-
-        #trigger-element {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Santa</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="site.js"></script>
 </head>
 
 <body>
-    <div id="trigger-element"></div>
-
-    <script type="importmap">
-        {
-            "imports": {
-                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
-                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
-            }
-        }
-    </script>
-
-    <script type="module" src="./js/main.js"></script>
+    <div id="input-section">
+        <div class="badge-list" id="badge-container">
+            <div class="badge">
+                Inimigo Secreto do Acampas<br>Clique no seu nome:
+            </div>
+        </div>
+    </div>
+    <div id="result-section">
+        <div class="badge-list" id="badge-container-res">
+            <div class="badge">
+                Seu inimigo secreto é:
+            </div>
+        </div>
+        <div class="badge-list" id="badge-container-res">
+            <div class="badge">
+                Não é possível refazer a operação.<br>Não esqueça do seu inimigo secreto pfv.
+            </div>
+        </div>
+    </div>
+    <script>party()</script>
 </body>
 
 </html>
